@@ -1,0 +1,15 @@
+.main-title {
+  font-size: clamp(rem(36), vw(48), rem(48));
+  font-weight: 700;
+  line-height: 1.1875;
+  color: var(--clr-dark-400);
+  &--main {
+    font-size: rem(64);
+    @include max-width($large-media) {
+      font-size: rem(48);
+    }
+    @include max-width($small-media) {
+      font-size: rem(30);
+    }
+  }
+}
