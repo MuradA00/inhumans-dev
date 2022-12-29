@@ -1,0 +1,41 @@
+.partners {
+  &__title {
+    text-align: center;
+    margin-bottom: rem(60);
+  }
+}
+
+.partners-row {
+  display: flex;
+  grid-gap: rem(57);
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@include max-width($large-media) {
+  .partners {
+    &__title {
+      margin-bottom: rem(40);
+    }
+  }
+  .partners-row {
+    &__item {
+      img {
+        transform: scale(0.6);
+      }
+    }
+    grid-gap: 2rem;
+  }
+}
+
+@include max-width($small-media) {
+  .partners {
+    &__title {
+      margin-bottom: rem(30);
+    }
+  }
+  .partners-row {
+    grid-gap: rem(22);
+  }
+}

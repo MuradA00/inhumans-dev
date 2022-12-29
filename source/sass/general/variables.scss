@@ -50,6 +50,10 @@ $small-media: 35.5em;
   border-radius: 4px;
   width: fit-content;
   color: var(--clr-light-300);
+  @include max-width($small-media) {
+    font-size: rem(14);
+    padding: rem(15) rem(35);
+  }
   &:hover {
     transform: scale(1.025);
   }
@@ -58,7 +62,7 @@ $small-media: 35.5em;
   }
   &--white {
     background-color: var(--clr-light-400);
-    color: var(--clr-blue-400);
+    color: var(--clr-dark-400);
   }
   &--pink {
     background-color: var(--clr-pink-400);
